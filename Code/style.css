@@ -32,8 +32,8 @@ h1{
 
 /*page content*/
 .content{
-    max-width: 1000px;
-    min-width: 800px;
+    max-width: 900px;
+    min-width: 700px;
     margin: 0 auto;
     margin-bottom: 100px;
     width: 100%;
@@ -60,35 +60,39 @@ section{
     vertical-align: middle;
     margin: auto;
     text-align: center;
+    line-height: 200%;
 }
 
-/*text color bloc 1*/
+/*text font and color bloc 1*/
 .menu_name_1{
     color: black;
+    font-size: 30px;
+    margin-top: 0;
 }
-
 .menu_1{
+    font-family: "Tillana";
     font-size: 40px;
     color: black;
 }
 
-/*text color bloc 2*/
+
+/*text font and color bloc 2*/
 .menu_name_2{
-    font-size: 25px;
+    font-size: 20px;
     background: -webkit-linear-gradient(45deg, #D8852E, #905BFD 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;
 }
-
 .menu_2{
     font-size: 40px;
     color: #D8852E;
 }
 
-/*text color bloc 3*/
+/*text font and color bloc 3*/
 .menu_name_3{
-    font-size: 25px;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
     background: -webkit-linear-gradient(45deg, #0431DF, #0887FB 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -96,11 +100,12 @@ section{
 }
 
 .menu_3{
-    font-size: 40px;
+    font-size: 60px;
+    font-family: 'Caveat', cursive;
     color: #0431DF;
 }
 
-/*text color bloc 4*/
+/*text font and color bloc 4*/
 .menu_name_4{
     font-size: 25px;
     background: -webkit-linear-gradient(45deg, #3D9339, #BFFF7E 80%);
@@ -110,44 +115,110 @@ section{
 }
 
 .menu_4{
-    font-size: 40px;
+    font-size: 60px;
+    font-family: 'Caveat', cursive;
     color: #3D9339;
 }
 
 /*menu bloc colors and animations*/
-.la_note_bloc{
-    font-family: "Devonshire";
-    background: #FCDFDB;
-    transform: scale(1); 
-    transition-duration: 300ms; 
-}
 
-.le_chic_bloc{
-    font-family: "Croissant One";
-    background: #FFF5FE;
-    transform: scale(1); 
-    transition-duration: 300ms; 
-}
-
-.le_delice_bloc{
-    background: #F9F9F9;
-    transform: scale(1); 
-    transition-duration: 300ms; 
-}
-
-.la_palette_bloc{
-    font-family: "Kaushan Script";
-    background: #FDFFFD;
-    transform: scale(1); 
-    transition-duration: 300ms; 
-}
-
+/*bloc shadow animation*/
 section:hover{
-    transform: scale(1.03);
+    transform: scale(1);
     box-shadow: rgb(172, 172, 172) 0 0 15px;  
     
 }
 
+/*animations bloc 1*/
+.la_note_bloc{
+    font-family: "Devonshire";
+    background: #FCDFDB;
+    font-size: 2em;
+    transform: scale(1); 
+    transition-duration: 300ms; 
+}
+.bloc_text{
+    line-height: 120%;
+    transform: scale(1);
+    transition-duration: 300ms; 
+}
+.la_note_bloc:hover .bloc_text{ 
+    transform: scale(1.5);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    opacity: 0.6;
+}
+
+/*note de musique*/
+.musique{
+    width: 35px;
+}
+
+/*animations bloc 2*/
+.le_chic_bloc{
+    font-family: "Croissant One";
+    background: #FFF5FE;
+    font-size: 2em;
+    transform: scale(1); 
+    transition-duration: 300ms; 
+}
+.bloc_text{
+    line-height: 120%;
+    transform: scale(1);
+    transition-duration: 300ms; 
+}
+
+.le_chic_bloc:hover .bloc_text{ 
+    transform: scale(1.5);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    opacity: 0.6;
+}
+
+/*animations bloc 3*/
+.le_delice_bloc{
+    background: #F9F9F9;
+    font-size: 2em;
+    transform: scale(1); 
+    transition-duration: 300ms; 
+}
+.bloc_text{
+    line-height: 120%;
+    transform: scale(1);
+    transition-duration: 300ms; 
+}
+
+.le_delice_bloc:hover .bloc_text{ 
+    transform: scale(1.5);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    opacity: 0.6;
+  }
+
+/*animations bloc 4*/
+.la_palette_bloc{
+    font-family: "Kaushan Script";
+    background: #FDFFFD;
+    font-size: 2em;
+    transform: scale(1); 
+    transition-duration: 300ms; 
+}
+.bloc_text{
+    line-height: 120%;
+    transform: scale(1);
+    transition-duration: 300ms; 
+}
+
+.la_palette_bloc:hover .bloc_text{ 
+    transform: scale(1.5);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    opacity: 0.6;
+  }
 /*prochainement botton*/
 .btn{
     background: #599b86;
@@ -163,6 +234,33 @@ section:hover{
     font-size: 1.5em;
     line-height: 200%;
 }
+
+/* loading dots */
+
+.loading:after {
+  content: ' .';
+  animation: dots 1s steps(5, end) infinite;}
+
+@keyframes dots {
+  0%, 20% {
+    color: rgba(0,0,0,0);
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  40% {
+    color: #fecb44;
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  60% {
+    text-shadow:
+      .25em 0 0 #fecb44,
+      .5em 0 0 rgba(0,0,0,0);}
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 #fecb44,
+      .5em 0 0 #fecb44;}}
+
 
 /*footer*/
 footer{
@@ -182,6 +280,28 @@ footer a{
     margin: 0 20px 0 20px;
     position: absolute;
 }
+
+footer a:hover{
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+    }
+    
+    @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
 
 .mentions{
     left: 0;

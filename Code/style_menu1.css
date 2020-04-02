@@ -1,0 +1,172 @@
+/*main style*/
+body{
+    margin: 0px;
+	padding: 0px;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    width: 100%;
+    height: 100%;
+    background: white;
+    margin: auto;
+}
+
+/*header*/
+header{
+    background: #599b86;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 0;
+}
+
+/*ohmyfood title*/
+header{
+
+    text-align: center;
+    margin-top: 0;
+    line-height: 200%;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -4px;
+    text-decoration: none;
+}
+
+header a{
+    text-decoration: none;
+    color: #fecb44;
+}
+/*footer*/
+footer{
+    position: fixed;
+    bottom: 0;
+    background: #599b86;
+    width: 100%;
+    height: 60px;
+    margin: 0 0 0 0;
+}
+
+footer a{
+    color: #fecb44;
+    text-decoration: none;
+    font-size: 1.4em;
+    line-height: 280%;
+    margin: 0 20px 0 20px;
+    position: absolute;
+}
+
+.mentions{
+    left: 0;
+}
+
+.contact{
+    right: 0;
+}
+
+
+footer a:hover{
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+    }
+    
+    @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+
+
+/*Menu1*/
+
+.main_title{
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.menu_bloc{
+    margin: auto;
+    margin-bottom: 100px;
+    max-width: 700px;
+    background: #FCDFDB;
+    padding: 70px;
+    color: #3C1218;
+}
+
+.head, .pied_page{
+    font-family: "Devonshire";
+    text-align: center;
+    font-size: 2em;
+}
+
+/*main menu title*/
+.first_title{
+    font-size: 1.5em;
+}
+.head img{
+    width: 75px;
+}
+
+/*menu title*/
+.menu_title{
+    text-align: center;
+    font-size: 1.4em;
+    font-family: "Tillana";
+    margin-top: 40px;
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu_title h4{
+    margin-right: 20px;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+
+.menu_title img{
+    height: 6px;
+    
+}
+
+/*menu content*/
+.menu_line{
+    font-family: "Tillana";
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.entrée_content, .plat_content, .dessert_content{
+    line-height: 80%;
+}
+
+/*Pied de page*/
+.pied_page_content{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.note2{
+    margin-right: 20px;
+    width: 30px;
+    height: 40px;
+}
+

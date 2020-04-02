@@ -45,15 +45,18 @@ h1{
 }
 
 /*menu bloc*/
-section{
+.menu_bloc{
     width: 100%;
-    max-height: 550px;
-    min-height: 450px;
+    max-height: 600px;
+    min-height: 500px;
     max-width: 350px;
     min-width: 200px;
     margin: 40px auto;
     box-shadow: rgb(226, 226, 226) 0 0 10px;
-    display: flex;
+}
+
+.menu_bloc a{
+    text-decoration: none;
 }
 
 .bloc_content{   
@@ -63,16 +66,25 @@ section{
     line-height: 200%;
 }
 
+.menu_link{
+    display: flex;
+    width: 100%;
+    max-height: 600px;
+    min-height: 500px;
+    max-width: 350px;
+    min-width: 200px;
+}
+
 /*text font and color bloc 1*/
 .menu_name_1{
-    color: black;
+    color: #3C1218;
     font-size: 30px;
     margin-top: 0;
 }
 .menu_1{
     font-family: "Tillana";
     font-size: 40px;
-    color: black;
+    color: #3C1218;
 }
 
 
@@ -170,7 +182,7 @@ section:hover{
 }
 
 .le_chic_bloc:hover .bloc_text{ 
-    transform: scale(1.5);
+    transform: scale(1.35);
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     transition: all .5s ease;
@@ -191,7 +203,7 @@ section:hover{
 }
 
 .le_delice_bloc:hover .bloc_text{ 
-    transform: scale(1.5);
+    transform: scale(1.35);
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     transition: all .5s ease;
@@ -220,13 +232,20 @@ section:hover{
     opacity: 0.6;
   }
 /*prochainement botton*/
-.btn{
+.prochainement_bloc{ 
     background: #599b86;
     width: 260px;
     height: 50px;
     border-radius: 10px;
     margin: auto;
 }
+
+.prochainement_bloc a{
+    text-decoration: none;
+    width: 260px;
+    height: 50px;
+}
+
 
 .btn p{
     text-align: center;
@@ -281,6 +300,15 @@ footer a{
     position: absolute;
 }
 
+.mentions{
+    left: 0;
+}
+
+.contact{
+    right: 0;
+}
+
+
 footer a:hover{
     /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 0.5s;
@@ -303,13 +331,6 @@ footer a:hover{
     100% { transform: translate(1px, -2px) rotate(-1deg); }
     }
 
-.mentions{
-    left: 0;
-}
-
-.contact{
-    right: 0;
-}
 
 /*media queries*/
 

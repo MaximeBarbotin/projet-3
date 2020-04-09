@@ -20,14 +20,20 @@ header{
 }
 
 /*ohmyfood title*/
-h1{
-    color: #fecb44;
+header{
+
     text-align: center;
     margin-top: 0;
     line-height: 200%;
     font-size: 3em;
     font-weight: 700;
     letter-spacing: -4px;
+    text-decoration: none;
+}
+
+header a{
+    text-decoration: none;
+    color: #fecb44;
 }
 
 /*page content*/
@@ -252,6 +258,11 @@ section:hover{
     color: #fecb44;
     font-size: 1.5em;
     line-height: 200%;
+}
+
+.annonce_prochainement{
+    color: black;
+    text-align: center;
 }
 
 /* loading dots */

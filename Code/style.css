@@ -161,7 +161,7 @@ section:hover{
     transition-duration: 300ms; 
 }
 .la_note_bloc:hover .bloc_text{ 
-    transform: scale(1.5);
+    transform: scale(1.4);
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     transition: all .5s ease;
@@ -363,4 +363,13 @@ footer a:hover{
     section{
         margin: 60px auto;
     }
+}
+
+@media screen and (max-width: 500px){
+
+    footer a{
+        font-size: 1em;
+        line-height: 350%;
+    }
+
 }

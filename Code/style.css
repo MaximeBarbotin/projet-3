@@ -297,7 +297,7 @@ footer{
     bottom: 0;
     background: #599b86;
     width: 100%;
-    height: 50px;
+    height: 60px;
     margin: 0 0 0 0;
 }
 
@@ -305,7 +305,7 @@ footer a{
     color: #fecb44;
     text-decoration: none;
     font-size: 1.4em;
-    line-height: 230%;
+    line-height: 270%;
     margin: 0 20px 0 20px;
     position: absolute;
 }

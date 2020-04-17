@@ -236,6 +236,7 @@ section:hover{
     transition: all .5s ease;
     opacity: 0.6;
   }
+
 /*prochainement botton*/
 .prochainement_bloc{ 
     background: #599b86;
@@ -320,10 +321,8 @@ footer a{
 
 
 footer a:hover{
-    /* Start the shake animation and make the animation last for 0.5 seconds */
+    /*wiggle animation*/
     animation: shake 0.5s;
-    
-    /* When the animation is finished, start again */
     animation-iteration-count: infinite;
     }
     
@@ -381,5 +380,41 @@ footer a:hover{
         margin-right: 25px;
         align-items: center;
     }
+
+    /*animation bloc 1*/
+    .la_note_bloc:hover .bloc_text{ 
+        transform: scale(1.2);
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        transition: all .5s ease;
+        opacity: 0.6;
+    }
+
+        /*animation bloc 2*/
+    .le_chic_bloc:hover .bloc_text{ 
+        transform: scale(1.1);
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        transition: all .5s ease;
+        opacity: 0.6;
+    }
+
+    /*animation bloc 3*/
+    .le_delice_bloc:hover .bloc_text{ 
+        transform: scale(1.15);
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        transition: all .5s ease;
+        opacity: 0.6;
+      }
+
+    /*animation bloc 4*/
+    .la_palette_bloc:hover .bloc_text{ 
+        transform: scale(1.2);
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        transition: all .5s ease;
+        opacity: 0.6;
+      }
 
 }

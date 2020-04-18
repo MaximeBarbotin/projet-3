@@ -135,11 +135,6 @@ footer a:hover{
     white-space: nowrap;
 }
 
-
-menu_title img{
-    height: 7px;   
-}
-
 .menu_title img{
     width: auto;
     min-width: 50px;

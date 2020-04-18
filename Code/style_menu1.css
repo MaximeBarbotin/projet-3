@@ -25,10 +25,6 @@
     font-family: "Tillana";
 }
 
-.menu_title img{
-    height: 6px;   
-}
-
 /*animation*/
 .soulignement:after{
     background: #3C1218;

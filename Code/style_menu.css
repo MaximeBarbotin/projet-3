@@ -136,8 +136,14 @@ footer a:hover{
 }
 
 
-.menu_title img{
+menu_title img{
     height: 7px;   
+}
+
+.menu_title img{
+    width: auto;
+    min-width: 50px;
+    max-width: 200px;
 }
 
 /*animation soulignement*/

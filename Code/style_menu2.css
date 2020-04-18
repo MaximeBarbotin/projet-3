@@ -17,7 +17,9 @@
 
 /*menu title*/
 .menu_title img{
-    height: 10px;
+    width: auto;
+    min-width: 50px;
+    max-width: 200px;
 }
 
 /*animation*/

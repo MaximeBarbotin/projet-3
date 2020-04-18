@@ -23,11 +23,6 @@
     line-height: 40%;
 }
 
-.ligne{
-    height: 8px;
-    max-width: 100%;
-}
-
 /*animation*/
 .soulignement:after{
     background: #A9ED74;

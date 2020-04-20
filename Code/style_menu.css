@@ -145,24 +145,25 @@ footer a:hover{
 .soulignement, .soulignement_1, .soulignement_2, .soulignement_3{
     position: relative;
 }
+
+.soulignement:hover:after, .soulignement_1:hover:after, .soulignement_2:hover:after, .soulignement_3:hover:after{
+    margin-top: -28px;
+    width: 100%;
+    left: 0;
+  }
+
 .soulignement:after, .soulignement_1:after, .soulignement_2:after, .soulignement_3:after{
     content: '';
     position: absolute;
-    width: 0; height: 3px;
+    width: 0; 
+    height: 3px;
     display: block;
-    margin-top: 5px;
     right: 0;
     transition: width .4s ease;
     -webkit-transition: width .4s ease;
     margin-top:-28px;
   }
    
-  .soulignement:hover:after, .soulignement_1:hover:after, .soulignement_2:hover:after, .soulignement_3:hover:after{
-    margin-top: -28px;
-    width: 100%;
-    left: 0;
-  }
-
 /*menu content*/
 .menu_line{
     display: flex;

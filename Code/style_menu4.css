@@ -8,6 +8,7 @@
 /*main menu title*/
 .first_title{
     font-size: 1.7em;
+    font-weight: bold;
     background: -webkit-linear-gradient(45deg, #3D9339, #BFFF7E 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -20,6 +21,7 @@
     margin-left: 20px;
     white-space: nowrap;
     font-size: 1.5em;
+    font-weight: normal;
     line-height: 40%;
 }
 
